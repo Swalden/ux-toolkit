@@ -1,0 +1,17 @@
+{
+  "name": "ux-toolkit",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Swalden/ux-toolkit",
+  "authors": [
+    "spencer walden <swalden8@gmail.com>"
+  ],
+  "description": "ux toolkit",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
