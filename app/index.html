@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,7 @@
   <!-- endbuild -->
   </head>
   <body>
-    <header class="app-bar promote-layer">
+    <header class="app-bar promote-layer" >
       <div class="app-bar-container">
         <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
         <h1 class="logo">UX Toolkit</h1>
@@ -45,34 +45,20 @@
     <nav class="navdrawer-container promote-layer">
       <h4>Navigation</h4>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="styleguide/index.html">Style Guide</a></li>
       </ul>
     </nav>
 
-    <main>
-     <ul class="featured-list">
-      <li class="featured-list__item clear">
-        <div class="container-small">
-          <div class="featured-list__content g--half">
-            <h3>Design Studio</h3>
-            <p>A collborative design tool that is great for focusing on a specific problem</p>
-            <a href="#ignore-click" class="cta--primary">View method</a>
-          </div>
-          <div class="featured-list__img-wrapper g--half g--last">
-            <div class="featured-list__img">
-              <img src="../images/icons/placeholder--small.png" alt="small image placeholder example">
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </main>
-
+    <ui-view></ui-view>
   <!-- build:js scripts/main.min.js -->
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="scripts/app.js"></script>
   <script src="scripts/main.js"></script>
+  <script src="scripts/controllers/HomeCtrl.js"></script>
+  <script src="scripts/controllers/MenuCtrl.js"></script>
+  <script src="scripts/directives/featured.js"></script>
   <!-- endbuild -->
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

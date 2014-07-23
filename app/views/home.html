@@ -1,0 +1,27 @@
+<main>
+  <h3>Filter by:</h3>
+  <ul>
+  <li><a ng-click="labels = 'method'" href="">Methods</a></li>
+    <li><a ng-click="labels = 'uxtool'" href="">Tools</a></li>
+    <li><a ng-click="labels = 'pattern'" href="">Patterns</a></li>
+    <li><a ng-click="labels = 'resource'" href="">Resources</a></li>
+    <li><a ng-click="labels = ''" href="">Clear</a></li>
+  </ul>
+  <ul class="ux-tool-list">
+  <li ng-repeat = "tool in tools |  filter:labels" class="ux-tool g--third clear">
+   
+      <div class="g--half">
+        <h3>{{tool.title}}</h3>
+        <p>{{tool.description}}</p>
+        <a href="" ng-click="transition(tool.id)" class="cta--primary">View method</a>
+      </div>
+      <div class="g--half g--last">
+        <div class="ux-tool-image">
+          <img src="../images/icons/placeholder--small.png" alt="small image placeholder example">
+        </div>
+      </div>
+
+  </li>
+   
+</ul>
+</main>
