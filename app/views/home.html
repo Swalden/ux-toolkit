@@ -1,14 +1,15 @@
 <main>
-  <h3>Filter by:</h3>
-  <ul>
-  <li><a ng-click="labels = 'method'" href="">Methods</a></li>
-    <li><a ng-click="labels = 'uxtool'" href="">Tools</a></li>
-    <li><a ng-click="labels = 'pattern'" href="">Patterns</a></li>
-    <li><a ng-click="labels = 'resource'" href="">Resources</a></li>
-    <li><a ng-click="labels = ''" href="">Clear</a></li>
-  </ul>
+  <div class = "labels-list">
+    <ul>
+      <li><a ng-click="labels = 'method'" href="">Methods</a></li>
+      <li><a ng-click="labels = 'uxtool'" href="">Tools</a></li>
+      <li><a ng-click="labels = 'pattern'" href="">Patterns</a></li>
+      <li><a ng-click="labels = 'resource'" href="">Resources</a></li>
+      <li><a ng-click="labels = ''" href="">Clear</a></li>
+    </ul>
+  </div>
   <ul class="ux-tool-list">
-  <li ng-repeat = "tool in tools |  filter:labels" class="ux-tool g--third clear">
+  <li ng-repeat = "tool in tools |  filter:labels" class="ux-tool g--third clear" ng-class = "{last: $index%3==0}">
    
       <div class="g--half">
         <h3>{{tool.title}}</h3>

@@ -2012,6 +2012,10 @@ div.highlight > pre > code .il, code .highlight .il {
   margin-right: 0;
 }
 
+.last {
+  margin-right: 0;
+}
+
 .g--centered {
   float: none;
   margin-left: auto;
@@ -3118,6 +3122,25 @@ object {
   .icon-circle--nav i {
     font-size: 26px;
   }
+}
+
+/**
+*
+* Labels list
+*
+**/
+.labels-list ul {
+  list-style-type: none;
+}
+.labels-list ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+.labels-list ul li a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  background-color: orange;
 }
 
 /**
