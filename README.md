@@ -4,7 +4,7 @@
 
 Problem:
 
-Searching for toolsets and methodologies for UX designers is quite difficult, as their does not appear to be any great centralised websites that assist. 
+Searching for toolsets and methodologies for UX designers is quite difficult, as there does not appear to be any great centralised websites that assist. 
 
 Solution:
 
